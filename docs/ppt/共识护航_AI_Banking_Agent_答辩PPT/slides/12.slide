@@ -1,0 +1,18 @@
+<Slide style={{ padding: 48, background: '#0f172a' }}>
+  <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#ffffff', marginBottom: 20 }}>模拟边界与致谢</Text>
+  <Box style={{ gap: 14 }}>
+    <Box style={{ borderRadius: 12, padding: 20, background: '#1e293b', gap: 8 }}>
+      <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#fca5a5' }}>待确认事项（不宣称完全达标）</Text>
+      <Text style={{ fontSize: 15, color: '#e2e8f0', lineHeight: 1.7 }}>
+        ① 模拟银行接口是否符合主办方验收口径<br />② 模拟强验证（OTP）是否被接受为「强验证」<br />③ GitHub 仓库地址待创建（不伪造链接）
+      </Text>
+    </Box>
+    <Box style={{ borderRadius: 12, padding: 20, background: '#1e293b', gap: 8 }}>
+      <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#93c5fd' }}>声明</Text>
+      <Text style={{ fontSize: 15, color: '#e2e8f0', lineHeight: 1.7 }}>
+        所有账户、交易与产品均为模拟/合成数据；离线测试模式不宣称真实模型接入。
+      </Text>
+    </Box>
+    <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#ffffff', marginTop: 8, textAlign: 'center' }}>谢谢各位评委，恳请指正</Text>
+  </Box>
+</Slide>

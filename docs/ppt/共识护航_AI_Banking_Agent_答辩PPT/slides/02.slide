@@ -1,0 +1,21 @@
+<Slide style={{ padding: 48, background: '#ffffff' }}>
+  <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#0f172a', marginBottom: 8 }}>问题与场景</Text>
+  <Box style={{ width: 60, height: 5, background: '#1a73e8', borderRadius: 3, marginBottom: 28 }} />
+  <Box style={{ flexDirection: 'row', gap: 20 }}>
+    <Box style={{ flex: 1, background: '#f0f4f8', borderRadius: 12, padding: 26, gap: 14 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#d93025' }}>合租 / 家庭月末结算的痛点</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.6 }}>
+        <span style={{ fontWeight: 'bold' }}>① 多人分摊易错</span>：电费按入住天数、宽带均分，手工算容易差一分一厘<br /><br />
+        <span style={{ fontWeight: 'bold' }}>② 可疑扣费难核验</span>：两笔同额扣费，是重复还是两个会员？<br /><br />
+        <span style={{ fontWeight: 'bold' }}>③ 账户边界模糊</span>：家人代办，一不小心就越权查余额、替人付款
+      </Text>
+    </Box>
+    <Box style={{ flex: 1, background: '#e8f0fe', borderRadius: 12, padding: 26, gap: 14 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1a73e8' }}>一句自然语言需求</Text>
+      <Text style={{ fontSize: 16, color: '#0f172a', lineHeight: 1.8, background: '#ffffff', borderRadius: 8, padding: 16 }}>
+        “帮我们结算本月共同开销，电费按入住天数分，停掉不用的共同会员。妈妈说有一笔陌生扣费，先核实。每个人留够下月开销，再分别安排自己的余钱。”
+      </Text>
+      <Text style={{ fontSize: 14, color: '#64748b' }}>目标：把它变成一个可授权、可核验、可恢复的银行任务链</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,22 @@
+<Slide style={{ padding: 48, background: '#ffffff' }}>
+  <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#0f172a', marginBottom: 8 }}>系统架构</Text>
+  <Box style={{ width: 60, height: 5, background: '#1a73e8', borderRadius: 3, marginBottom: 24 }} />
+  <Box style={{ flexDirection: 'row', gap: 12 }}>
+    {[
+      { t: 'Web App 渠道', d: '登录·对话·共同空间·私人会话·审计', c: '#0f172a' },
+      { t: 'LLM 规划层', d: '意图理解·澄清·结构化计划（可离线/真实模型）', c: '#1a73e8' },
+      { t: '权限策略引擎', d: '绿/黄/红判定（确定性程序）', c: '#b26a00' },
+      { t: '业务服务层', d: '账本/转账/账单/理财/卡片/订阅/证据/DAG/审计', c: '#1a73e8' },
+      { t: '适配 + 持久化', d: '银行适配层 · SQLite · 会话/挑战', c: '#1e8e3e' },
+    ].map((x, i) => (
+      <Box key={i} style={{ flex: 1, borderRadius: 10, padding: 18, background: '#f0f4f8', gap: 8, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 15, fontWeight: 'bold', color: x.c, textAlign: 'center' }}>{x.t}</Text>
+        <Text style={{ fontSize: 12, color: '#64748b', textAlign: 'center', lineHeight: 1.5 }}>{x.d}</Text>
+      </Box>
+    ))}
+  </Box>
+  <Box style={{ marginTop: 20, borderRadius: 12, padding: 20, background: '#e8f0fe', gap: 6 }}>
+    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#1a73e8' }}>核心边界：模型只规划，程序只执行</Text>
+    <Text style={{ fontSize: 15, color: '#334155' }}>金额计算、权限校验、业务执行、账本修改全部由确定性程序负责；身份来自服务端会话。</Text>
+  </Box>
+</Slide>

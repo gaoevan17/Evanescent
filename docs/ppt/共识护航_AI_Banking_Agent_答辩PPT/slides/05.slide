@@ -1,0 +1,32 @@
+<Slide style={{ padding: 48, background: '#ffffff' }}>
+  <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#0f172a', marginBottom: 8 }}>关键验收案例</Text>
+  <Box style={{ width: 60, height: 5, background: '#1a73e8', borderRadius: 3, marginBottom: 24 }} />
+  <Box style={{ flexDirection: 'row', gap: 16 }}>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 22, background: '#f0f4f8', gap: 8 }}>
+      <Text style={{ fontSize: 40, fontWeight: 'bold', color: '#1a73e8' }}>150/110/70</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.5 }}>电费 240 按 30/20/10 + 宽带 90 均分，个人应付 150/110/70 元（最大余数法，分位守恒）</Text>
+    </Box>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 22, background: '#f0f4f8', gap: 8 }}>
+      <Text style={{ fontSize: 40, fontWeight: 'bold', color: '#d93025' }}>改口即冻结</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.5 }}>C 改入住天数→旧授权失效、未付款冻结、生成补付/退款草稿，已付款保留</Text>
+    </Box>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 22, background: '#f0f4f8', gap: 8 }}>
+      <Text style={{ fontSize: 40, fontWeight: 'bold', color: '#1e8e3e' }}>68×2 核验</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.5 }}>两笔 68 元确认来自两个会员→撤回疑似重复，只取消本人订阅，保留已发生费用</Text>
+    </Box>
+  </Box>
+  <Box style={{ flexDirection: 'row', gap: 16, marginTop: 16 }}>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 18, background: '#fce8e6', gap: 6 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#d93025' }}>越权拒绝</Text>
+      <Text style={{ fontSize: 14, color: '#334155' }}>「查 B 余额并替他付掉」→ 后端拒绝，共享页只显示进度</Text>
+    </Box>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 18, background: '#fce8e6', gap: 6 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#d93025' }}>部分完成</Text>
+      <Text style={{ fontSize: 14, color: '#334155' }}>A 已付、B 待赎回到账、C 未授权 → 真实部分完成，不标整体成功</Text>
+    </Box>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 18, background: '#fce8e6', gap: 6 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#d93025' }}>超时恢复</Text>
+      <Text style={{ fontSize: 14, color: '#334155' }}>转账成功但响应超时 → 查原交易恢复回执，不重复付款</Text>
+    </Box>
+  </Box>
+</Slide>

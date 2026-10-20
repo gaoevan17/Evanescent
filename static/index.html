@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>共识护航 AI Banking Agent</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="login-panel" class="login-panel">
+    <div class="login-card">
+      <div class="brand">
+        <h1>共识护航</h1>
+        <p class="sub">一起算账 · 各自授权 · 证据核验</p>
+        <p class="banner">参赛模拟环境 —— 所有账户、交易与产品均为模拟/合成数据</p>
+      </div>
+      <div class="demo-accounts">
+        <p class="hint">选择一个演示账号（密码 demo123456）</p>
+        <div class="account-grid">
+          <button class="acc" data-user="alice" onclick="pickAccount('alice')">
+            <span class="avatar">王</span><span class="name">王淑芬（妈妈）</span>
+          </button>
+          <button class="acc" data-user="bob" onclick="pickAccount('bob')">
+            <span class="avatar">李</span><span class="name">李伟</span>
+          </button>
+          <button class="acc" data-user="carol" onclick="pickAccount('carol')">
+            <span class="avatar">陈</span><span class="name">陈晨</span>
+          </button>
+        </div>
+      </div>
+      <form id="login-form" onsubmit="doLogin(event)">
+        <input id="login-user" type="text" placeholder="用户名" autocomplete="username">
+        <input id="login-pass" type="password" placeholder="密码" autocomplete="current-password">
+        <button type="submit" class="primary">登录</button>
+      </form>
+      <p id="login-err" class="err"></p>
+    </div>
+  </div>
+
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div class="brand-inline">
+        <span class="logo">共识护航</span>
+        <span class="badge" id="mode-badge">离线测试模式</span>
+      </div>
+      <div class="userbox">
+        <span id="user-name"></span>
+        <span class="bal" id="user-balance"></span>
+        <button class="ghost" onclick="logout()">退出</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="chat" onclick="switchTab('chat')">对话</button>
+      <button class="tab" data-tab="space" onclick="switchTab('space')">共同空间</button>
+      <button class="tab" data-tab="private" onclick="switchTab('private')">我的账户</button>
+      <button class="tab" data-tab="audit" onclick="switchTab('audit')">审计（脱敏）</button>
+    </nav>
+
+    <main>
+      <!-- 对话 -->
+      <section id="tab-chat" class="tabpane active">
+        <div class="chat-layout">
+          <div id="chat-log" class="chat-log"></div>
+          <div class="chat-input">
+            <textarea id="chat-text" placeholder="用自然语言描述需求，例如：帮我们结算本月共同开销，电费按入住天数分……" rows="2"></textarea>
+            <button class="primary" onclick="sendChat()">发送</button>
+          </div>
+        </div>
+        <div id="plan-panel" class="plan-panel"></div>
+      </section>
+
+      <!-- 共同空间 -->
+      <section id="tab-space" class="tabpane">
+        <h2>共同空间 · 结算进度</h2>
+        <div id="space-progress" class="cards"></div>
+        <p class="hint">共同空间仅展示获准共享的费用与结算状态；余额、完整流水等留在本人私有空间。</p>
+      </section>
+
+      <!-- 我的账户 -->
+      <section id="tab-private" class="tabpane">
+        <h2>我的账户</h2>
+        <div class="sub-tabs">
+          <button class="subtab active" data-sub="tx" onclick="switchSub('tx')">交易流水</button>
+          <button class="subtab" data-sub="sub" onclick="switchSub('sub')">订阅/代扣</button>
+          <button class="subtab" data-sub="card" onclick="switchSub('card')">卡片</button>
+          <button class="subtab" data-sub="wealth" onclick="switchSub('wealth')">理财</button>
+          <button class="subtab" data-sub="evidence" onclick="switchSub('evidence')">证据卡</button>
+        </div>
+        <div id="private-content" class="cards"></div>
+      </section>
+
+      <!-- 审计 -->
+      <section id="tab-audit" class="tabpane">
+        <h2>审计（脱敏）</h2>
+        <div id="audit-list" class="cards"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

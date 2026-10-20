@@ -1,0 +1,24 @@
+<Slide style={{ padding: 48, background: '#ffffff' }}>
+  <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#0f172a', marginBottom: 8 }}>产品定位：三个核心机制</Text>
+  <Box style={{ width: 60, height: 5, background: '#1a73e8', borderRadius: 3, marginBottom: 28 }} />
+  <Box style={{ flexDirection: 'row', gap: 20 }}>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 26, background: '#f0f4f8', borderTop: '5px solid #1a73e8', gap: 10 }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#0f172a' }}>① 有版本的共识账本</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.6 }}>
+        记录费用项目、参与者、分摊方式、权重、有效期、版本与成员确认。规则变更影响后续付款与授权。
+      </Text>
+    </Box>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 26, background: '#fef7e0', borderTop: '5px solid #b26a00', gap: 10 }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#0f172a' }}>② 证据卡驱动核验</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.6 }}>
+        关联交易号、商户别名、订阅授权、时间与用户反馈。证据不足时保持「待核验」，不直接认定盗刷。
+      </Text>
+    </Box>
+    <Box style={{ flex: 1, borderRadius: 12, padding: 26, background: '#e6f4ea', borderTop: '5px solid #1e8e3e', gap: 10 }}>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#0f172a' }}>③ 共同看进度、个人管资金</Text>
+      <Text style={{ fontSize: 15, color: '#334155', lineHeight: 1.6 }}>
+        共享空间仅展示获准共享的结算状态；余额、流水、问卷、持仓留在本人私有空间。
+      </Text>
+    </Box>
+  </Box>
+</Slide>

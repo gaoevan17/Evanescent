@@ -1,0 +1,19 @@
+<Slide style={{ padding: 48, background: '#ffffff' }}>
+  <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#0f172a', marginBottom: 8 }}>六场景全覆盖</Text>
+  <Box style={{ width: 60, height: 5, background: '#1a73e8', borderRadius: 3, marginBottom: 24 }} />
+  <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 14 }}>
+    {[
+      { t: '智能转账', d: '收款人检索·同名澄清·定时·AA·幂等回读', c: '#1a73e8' },
+      { t: '账单分析', d: '去重·分类·月/年报·异常候选', c: '#1a73e8' },
+      { t: '理财操作', d: '问卷适配·申购·赎回(申请≠到账)', c: '#1a73e8' },
+      { t: '卡片管理', d: '虚拟卡·额度·限制·挂失/解挂', c: '#1a73e8' },
+      { t: '订阅/代扣', d: '周期识别·授权查询·取消回读', c: '#1a73e8' },
+      { t: '跨场景联动', d: '有依赖任务链 + 异常处置支线', c: '#d93025' },
+    ].map((x, i) => (
+      <Box key={i} style={{ width: 380, borderRadius: 12, padding: 20, background: '#f0f4f8', gap: 6, borderLeft: '5px solid ' + x.c }}>
+        <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#0f172a' }}>{x.t}</Text>
+        <Text style={{ fontSize: 14, color: '#64748b' }}>{x.d}</Text>
+      </Box>
+    ))}
+  </Box>
+</Slide>
