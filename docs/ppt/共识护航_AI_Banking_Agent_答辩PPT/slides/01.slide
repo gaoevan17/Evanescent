@@ -1,9 +1,0 @@
-<Slide style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1a73e8 100%)', padding: 90 }}>
-  <Box style={{ flex: 1, justifyContent: 'center', gap: 22 }}>
-    <Box style={{ width: 90, height: 8, background: '#ffffff', borderRadius: 4 }} />
-    <Text style={{ fontSize: 58, fontWeight: 'bold', color: '#ffffff', letterSpacing: 2 }}>共识护航</Text>
-    <Text style={{ fontSize: 26, color: '#e8f0fe' }}>一起算账 · 各自授权 · 证据核验</Text>
-    <Text style={{ fontSize: 18, color: '#c7d9f7', marginTop: 8 }}>银行 AI 智能体 · 面向合租 / 家庭月末共同开销结算</Text>
-    <Text style={{ fontSize: 14, color: '#a9c3ee', marginTop: 30 }}>2026 深圳国际金融科技大赛 · 国内人工智能赛道</Text>
-  </Box>
-</Slide>
